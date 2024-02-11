@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+     
+        .leftcontent {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+            float: left;
+            width: 60%;
+        }
+        .rightcontent {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            gap: 10px;
+            float: right;
+            width: 40%;
+        }
+
+        fieldset {
+            width: 30%;
+            height: auto;
+            padding: 1%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 0;
+            margin-right: 0;
+            overflow: auto;
+            justify-content: center;
+        }
+        .hr {
+            flex-grow: 1;
+            background-color: green;
+            height: 2px;
+        }
+        .heading {
+            display: flex;
+            width: 30%;
+            text-align: center;
+            color: green;
+            font-weight: bold;
+        }
+        .label {
+            font-weight: bold; /* Make the text bold */
+        }
+
+        .des1 {
+            font-size: smaller;
+            margin: 0;
+        }
+
+        .des2 {
+            font-size: smaller;
+            text-decoration: line-through;
+            margin: 0;
+        }
+        .offer {
+            background-color: green;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="heading">
+            <hr class="hr"/>YAY! It's BOGO<hr class="hr"/>
+        </div>
+
+        <fieldset id="f1">
+            <div>
+                <div class="leftcontent">
+                    <input type="radio" id="radio1" name="radio" value="option1">
+                    <label for="radio1"><span class="label">&nbsp;1 Unit&nbsp;&nbsp;</span><span class="offer">&nbsp;10% Off&nbsp;</span><br/><p class="des1">Standard price</p></label>
+                </div>
+                <div class="rightcontent">
+                    <span class="label">$10.00 USD
+                    </span><br/><p class="des2">$24.00 USD</p>
+                </div>
+            </div>
+            <div style="margin-top:3%;" id="d1">
+                <div style="width:60%;float:left">
+                    <span style="display: inline-block;">
+                        <span style="margin-top: 20px;">Size</span><br>
+                        <span style="margin-top:20px"> #1 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select><br/>
+                        <span style="margin-top: 20px">#2 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select>
+                    </span>
+                    <span style="display: inline-block;"> Colour<br>
+                        <select style="width:60px;"><option>Black</option><option>White</option><option>Red</option></select><br/>
+                        <select style="width:60px;"><option>Black</option><option>White</option><option>Red</option></select>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="f2">
+            <legend align="right" style="background-color: green;padding:5px;border-radius:2px;font-weight: bold;">Most Popular</legend>
+            <div>
+                <div class="leftcontent">
+                    <input type="radio" id="radio1" name="radio" value="option1">
+                    <label for="radio1"><span class="label">&nbsp;2 Unit&nbsp;&nbsp;</span><span class="offer">&nbsp;20% Off&nbsp;</span><br/><p class="des1">Standard price</p></label>
+                </div>
+                <div class="rightcontent">
+                    <span class="label">$18.00 USD
+                    </span><br/><p class="des2">$24.00 USD</p>
+                </div>
+            </div>
+            <div style="margin-top:3%;" id="d2">
+                <div style="width:60%;float:left">
+                    <span style="display: inline-block;">
+                        <span style="margin-top: 20px;">Size</span><br>
+                        <span style="margin-top:20px"> #1 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select><br/>
+                        <span style="margin-top: 20px">#2 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select>
+                    </span>
+                    <span style="display: inline-block;"> Colour<br>
+                        <select style="width:60px;"><option>Black</option><option>White</option><option>Red</option></select><br/>
+                        <select style="width:60px;"><option>Black</option><option>White</option><option>Red</option></select>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset id="f3">
+            <div class="leftcontent">
+                <input type="radio" id="radio1" name="radio" value="option1">
+                <label for="radio1"><span class="label">&nbsp;3 Unit&nbsp;&nbsp;</span><span class="offer">&nbsp;30% Off&nbsp;</span><br/><p class="des1">Standard price</p></label>
+            </div>
+            <div class="rightcontent">
+                <span class="label">$24.00 USD
+                </span><br/><p class="des2">$24.00 USD</p>
+            </div>
+            <div style="margin-top:3%;"id="d3">
+                <div style="width:60%;float:left">
+                    <span style="display: inline-block;">
+                        <span style="margin-top: 20px;">Size</span><br>
+                        <span style="margin-top:20px"> #1 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select><br/>
+                        <span style="margin-top: 20px">#2 </span><select style="width:60px;"><option>S</option><option>M</option><option>L</option></select>
+                    </span>
+                    <span style="display: inline-block;"> Colour<br>
+                        <select style="widid="d3"th:60px;"><option>Black</option><option>White</option><option>Red</option></select><br/>
+                        <select style="width:60px;"><option>Black</option><option>White</option><option>Red</option></select>
+                    </span>
+                </div>
+            </div>
+        </fieldset>
+        <div style="width:30%;margin-bottom: 50px;">
+            <span style='float: left;color:green;font-weight: bold;'>Free Delivery</span>
+            <span style='float: right;font-weight: bold;'>Total : $18.00 USD</span>
+            <span></span>
+        </div>
+
+        <div  style="width:30%;">
+            <button style="width:100%;padding: auto;background-color:green">+ Add to Cart</button>
+        </div>
+    </center>
+</body>
+<script>
+    document.getElementById("d1").style.display = "none";
+    document.getElementById("d2").style.display = "none";
+    document.getElementById("d3").style.display = "none";
+    document.getElementById("f1").onmouseover = function () {
+        document.getElementById("d1").style.display = "block";
+        this.style.border = "2px solid green";
+    };
+    document.getElementById("f2").onmouseover = function () {
+        document.getElementById("d2").style.display = "block";
+        this.style.border = "2px solid green";
+    };
+    document.getElementById("f3").onmouseover = function () {
+        document.getElementById("d3").style.display = "block";
+        this.style.border = "2px solid green";
+    };
+    document.getElementById("f1").onmouseout = function () {
+        document.getElementById("d1").style.display = "none";
+        this.style.border = "";
+    };
+    document.getElementById("f2").onmouseout = function () {
+        document.getElementById("d2").style.display = "none";
+        this.style.border = "";
+    };
+    document.getElementById("f3").onmouseout = function () {
+        document.getElementById("d3").style.display = "none";
+        this.style.border = "";
+    };
+</script>
+</html>
